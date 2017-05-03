@@ -1,3 +1,17 @@
-.main.container {
-    margin-top: 2rem;
+.ui.secondary.menu {
+    background: #FFF;
+}
+
+.ui.secondary.pointing.menu .item {
+    /*-webkit-align-self: flex-end;*/
+    /*-ms-flex-item-align: end;*/
+    align-self: center;
+}
+
+.right.menu .item {
+    text-transform: uppercase;
+}
+
+.ui.menu .item {
+    text-transform: uppercase;
 }

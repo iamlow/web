@@ -107,17 +107,19 @@
     .ready(function() {
 
       // fix menu when passed
-      // $('.masthead')
-      //   .visibility({
-      //     once: false,
-      //     onBottomPassed: function() {
-      //       $('.fixed.menu').transition('fade in');
-      //     },
-      //     onBottomPassedReverse: function() {
-      //       $('.fixed.menu').transition('fade out');
-      //     }
-      //   })
-      // ;
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            // $('.fixed.menu').transition('fade in');
+            $('#title-logo').attr('class','ui mini image');
+          },
+          onBottomPassedReverse: function() {
+            // $('.fixed.menu').transition('fade out');
+            $('#title-logo').attr('class','ui tiny image');
+          }
+        })
+      ;
 
       // create sidebar and attach to menu open
       $('.ui.sidebar')
@@ -192,7 +194,7 @@
     <div class="ui container">
       <div class="ui fixed secondary pointing menu">
         <a class="item">
-          <img class="ui tiny image" src="../images/title_logo.png">
+          <img id="title-logo" class="ui tiny image" src="../images/title_logo.png">
         </a>
         <a class="toc item">
           <i class="sidebar icon"></i>

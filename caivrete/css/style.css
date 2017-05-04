@@ -55,7 +55,8 @@
   padding: 5em 0em;
 }
 
-.secondary.pointing.menu .toc.item {
+.secondary.pointing.menu .toc.item,
+.secondary.pointing.menu .mobile.logo.item {
   display: none;
   border-bottom-style: none;
 }
@@ -65,10 +66,12 @@
     display: none !important;
   }*/
   .secondary.pointing.menu .item,
-  .secondary.pointing.menu .menu {
+  .secondary.pointing.menu .menu,
+  .secondary.pointing.menu .button {
     display: none;
   }
-  .secondary.pointing.menu .toc.item {
+  .secondary.pointing.menu .toc.item,
+  .secondary.pointing.menu .mobile.logo.item {
     display: block;
   }
   .masthead.segment {
